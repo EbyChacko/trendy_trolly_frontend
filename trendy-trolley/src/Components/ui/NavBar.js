@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
 
 
-export const NavBar = () => {
+const NavBar = () => {
     return (
         <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 ${styles.navbar}`}>
             < div className="container">
@@ -35,3 +35,5 @@ export const NavBar = () => {
         </nav >
   )
 }
+
+export default NavBar;
