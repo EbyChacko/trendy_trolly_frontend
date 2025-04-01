@@ -9,7 +9,7 @@ const NavBar = () => {
     return (
         <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 ${styles.navbar}`}>
             < div className="container">
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="https://jimlynx.github.io/Job_Alerts_2025/">
                     <img src="/logo.png" alt="Logo" width="30" height="24" />
                 </a>
                 <button
