@@ -5,6 +5,7 @@ import CardContainer from './CardContainer'
 const HomePage = () => {
     return (
         <>
+        <h1>Hello</h1>
             <Header />
             <CardContainer />
         </>

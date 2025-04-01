@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const NavLink = () => {
+const NavBarLink = () => {
     return (
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -10,9 +10,9 @@ const NavLink = () => {
                 </a>
             </li>
             <li className="nav-item">
-                <link to='/profile' className="nav-link fw-seminbold" href="#!">
+                <Link to='/profile' className="nav-link fw-seminbold" href="#!">
                     Shop
-                </link>
+                </Link>
             </li>
             <li className="nav-item">
                 <a className="nav-link fw-seminbold" href="#!">
@@ -28,4 +28,4 @@ const NavLink = () => {
     )
 }
 
-export default NavLink
+export default NavBarLink

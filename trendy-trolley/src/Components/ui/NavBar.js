@@ -1,7 +1,8 @@
 import { PiShoppingCartLight } from "react-icons/pi";
-import { PiShoppingCartFill } from "react-icons/pi";
+// import { PiShoppingCartFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
+import NavBarLink from "./NavBarLink";
 
 
 const NavBar = () => {
@@ -23,6 +24,8 @@ const NavBar = () => {
                     <span className="navbar-toggler-icon">Home</span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarContent">
+                    <NavBarLink />
+                    <Link to="/cart" className={`nav-link ${styles.cartIcon}`}>
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
                             <Link to="/cart" className={`nav-link ${styles.cartIcon}`}>
@@ -30,6 +33,7 @@ const NavBar = () => {
                             </Link>
                         </li>
                     </ul>
+                    </Link>
                 </div>
             </div>
         </nav >
