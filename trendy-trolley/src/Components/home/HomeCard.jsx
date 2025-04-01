@@ -1,9 +1,10 @@
-import React from 'react'
+import style from './HomeCard.module.css'
+import { Link } from 'react-router-dom'
 
 const HomeCard = () => {
     return (
-        <div className={`col-md-3 ${Style.col}`}>
-            <Link to="/detail" className={Style.link}>
+        <div className={`col-md-3 ${style.col}`}>
+            <Link to="/detail" className={style.link}>
                 <div className={style.card}>
                     <div className="card-header">
                         <img src="" className={style.cardImgTop} alt="..." />
