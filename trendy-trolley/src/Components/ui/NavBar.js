@@ -3,6 +3,7 @@ import { PiShoppingCartLight } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import NavBarLink from "./NavBarLink";
+import logo from '../../assets/Images/Trendy_trolley_logo.webp';
 
 
 const NavBar = () => {
@@ -10,7 +11,7 @@ const NavBar = () => {
         <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 ${styles.navbar}`}>
             < div className="container">
                 <a className="navbar-brand" href="#!">
-                    <img src="/logo.png" alt="Logo" width="30" height="24" />
+                    <img src={logo} alt="Logo"  height="70" />
                 </a>
                 <button
                     className="navbar-toggler"
