@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="bg-light py-3" style={{ backgroundColor: "#6050DC", color: "white" }}>
+        <footer className="py-3" style={{ backgroundColor: "#6050DC", color: "white" }}>
             <div className="container text-center p-3">
                 <div className="mb-2">
                     <a href="#!" className="text-white text-decoration-none mx-2">Home</a>
@@ -18,7 +18,7 @@ const Footer = () => {
                 <a href="#!" className="text-white mx-2">Instagram</a>
             </div>
             <div className="container text-center p-3">
-                © 2023 Trendy Trolley. All rights reserved.
+                © {new Date().getFullYear()} Trendy Trolley. All rights reserved.
             </div>
         </footer>
     )

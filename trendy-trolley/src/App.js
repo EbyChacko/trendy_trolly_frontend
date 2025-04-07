@@ -7,7 +7,6 @@ import NotFoundPage from './Components/ui/NotFoundPage';
 const App = () => {
   return (
     <BrowserRouter>
-    <div style={{color: 'black'}}>Test</div>
       <Routes>
         <Route path='/' element={<MainLayout />}>
           <Route index element={<HomePage />} />
