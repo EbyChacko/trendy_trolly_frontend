@@ -1,14 +1,13 @@
 import React from 'react'
-
-const RelatedProducts = () => {
+import HomeCard from '../home/HomeCard'
+const RelatedProducts = ({ products }) => {
     return (
-        <section className='py-3 bg-light' >
+        <section className="py-5" id="shop">
+            <hr></hr>
+            <h2 className='fw-bolder m-4'>Related Products</h2>
             <div className='container px-4 px-lg-5 mt-5'>
-                <h2 className='fw-bolder mb-4'>Related Products</h2>
                 <div className='row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center align-items-center'>
-                    <div className='col-md-6'>
-                        <h2 className='display-5 fw-bolder'>Related Products</h2>
-                    </div>
+                    {products.map(product => <HomeCard key={product.id} product={product} />)}
                 </div>
             </div>
         </section>
